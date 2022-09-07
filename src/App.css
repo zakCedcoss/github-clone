@@ -223,9 +223,13 @@
 }
 
 .attribs {
+    display: flex;
     margin-top: 1rem;
 }
 
-.attribs span {
+.attribs>span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     margin-inline: 0.5rem;
 }

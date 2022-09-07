@@ -45,10 +45,12 @@ function Overview() {
                 : user.company}
             </span>
           </div>
-          <div className="location">
-            <HiOutlineLocationMarker />
-            <span>{user.location}</span>
-          </div>
+          {user.location && (
+            <div className="location">
+              <HiOutlineLocationMarker />
+              <span>{user.location}</span>
+            </div>
+          )}
           <div className="link">
             <FaLink />
             <a href={user.blog}>{user.blog}</a>
