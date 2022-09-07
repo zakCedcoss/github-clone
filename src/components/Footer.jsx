@@ -16,6 +16,9 @@ function Footer({ login }) {
         <FaTwitter />
       </div>
       <div className="footer-name">@ {login ? login : "devilboy"}</div>
+      <span style={{ fontSize: "0.7rem" }}>
+        Made By Zeeshan Ahmad Khan (ZAK)
+      </span>
     </div>
   );
 }
